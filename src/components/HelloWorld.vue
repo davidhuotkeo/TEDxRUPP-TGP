@@ -1,34 +1,45 @@
 <template>
-  <div class="hello">
-    <p1>{{ msg }}</p1><br><br><br><br>
-    <input type="button" value="Main website" id="button">
-  </div>
+    <div class="hello">
+        <p1>{{ msg }}</p1>
+        <div id="button" @click="goToMainWebsite">Main event</div>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
- 
+    name: "HelloWorld",
+    props: {
+        msg: String,
+    },
+    methods: {
+        goToMainWebsite: () => {
+            window.location = "http://tedxrupp.com";
+        },
+    },
+};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+p1 {
+    font-size: 18px;
+    padding: 20px;
+    color: #202020;
 }
-#button{
+
+#button {
     background-color: red;
-  border: none;
-  color: white;
-  padding: 5px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 12px;
+
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+
+    border-radius: 12px;
+    border: none;
+
+    color: white;
+
+    padding: 10px 40px;
+    margin-top: 30px;
 }
 </style>
