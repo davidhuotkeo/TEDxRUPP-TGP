@@ -1,6 +1,8 @@
 <template>
     <div class="hello">
-        <p1>{{ msg }}</p1>
+        <div>
+            <p1>{{ msg }}</p1>
+        </div>
         <div id="button" @click="goToMainWebsite">Main event</div>
     </div>
 </template>
@@ -39,6 +41,7 @@ p1 {
 
     color: white;
 
+    align-content: CENTER;
     padding: 10px 40px;
     margin-top: 30px;
 }
