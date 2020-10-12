@@ -2,7 +2,6 @@
   <div class="about">
     <img alt="Vue logo" id="im" src="../assets/tedx.png" width="200" />
     <qrcode-vue :value="value" :size="size" level="H"></qrcode-vue>
-    <canvas id="canvas"></canvas>
     <HelloWorld
             id="spacing"
             msg="Welcome to TEDxRUPP,This is your TEDxRUPP Circle ticket.
@@ -68,5 +67,10 @@ body {
     line-height: normal;
     align-content: center;
 }
+
+canvas {
+    margin: 50px 0;
+}
+
 </style>
 
